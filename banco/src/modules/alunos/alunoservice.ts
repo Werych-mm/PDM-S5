@@ -10,7 +10,7 @@ export const Alunoservice = {
     //R - read
     buscarTodos(): Aluno[] {
         if(!db) return [];
-            return db.getALLSync('SELECT * from alunos;');
+            return db.getallSync('SELECT * from alunos;');
     },
     //U - update
     atualizar(id:number, nome:string, cgu:string) : void{
